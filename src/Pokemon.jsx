@@ -1,11 +1,10 @@
 import PokemonTile from "./PokemonTile";
 
-function Pokemon(props, deletePokemon) {
+function Pokemon({array, deletePokemon}) {
     return (
         <div>
-            {props.array.map((item, index) => <PokemonTile key = {index} pokemon={item} deletePokemon = {props.deletePokemon} />)}
-
-
+            
+            {array.map((item, index) => <PokemonTile key = {item.id} pokemon={item} deletePokemon = {deletePokemon} />)}
         </div>
     )
 }

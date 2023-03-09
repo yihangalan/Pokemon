@@ -1,7 +1,7 @@
-export default function PokemonTile(props) {
+export default function PokemonTile({pokemon, deletePokemon}) {
     return(
     <div>
-        <img src={props.pokemon.image} alt="" onDoubleClick={props.deletePokemon}/>
-        <p>{props.pokemon.name}</p>
+        <img onDoubleClick={()=>deletePokemon(pokemon)} src={pokemon.image} alt="" />
+        <p>{pokemon.name}</p>
     </div>)
 }
