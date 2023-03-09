@@ -14,7 +14,7 @@ function App() {
       
   }
 
-  function deletePokemon(pokemon){  
+  function dele(pokemon){  
     // setArray(array.filter(item => item.id !== pokemon.id));
     console.log(pokemon);
     console.log("deletePokemon被触发了");
@@ -24,10 +24,12 @@ function App() {
   return (
     <div className="App">
       <h1>My pokemon</h1>
-      <button onClick={deletePokemon("hh")}>hhhhhh </button>
       <button onClick={getFetch}>Add random Pokemon</button>
-      <Pokemon array = {array} deletePokemon = {deletePokemon}/>
+      <Pokemon array = {array} deletePokemon = {dele}/>
+      <button onClick={dele("ddjhkjhkjh")} id= "dd">ijjkhk</button>
+      
     </div>
+    
   )
 }
 
